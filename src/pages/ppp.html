@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <my-head></my-head>
+  <body>
+    <awesome-header></awesome-header>
+    <!-- outputs $14.78 -->
+    <ppp-price from="us" to="gb" currency="usd">$10</ppp-price>
+    <ppp-price from="us" to="gb">$10 USD</ppp-price>
+
+    <!-- outputs €9.76 -->
+    <ppp-price from="fr" to="de" currency="eur">10€</ppp-price>
+
+    <!-- uses CloudCannon geolocation for country -->
+    <ppp-price from="fr" currency="eur">10€</ppp-price>
+    <my-footer></my-footer>
+  </body>
+</html>
